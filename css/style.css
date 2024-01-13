@@ -11,8 +11,10 @@ html {
 }
 
 .header-inicio {
-    color: #183762;
+    color: #050A30;
 }
+
+
 /* Estilo para o botão "Voltar ao Topo" */
 #btnVoltarAoTopo {
     
@@ -32,7 +34,23 @@ html {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.d-column {
+    display: flex;
+    flex-direction: column;
+}
 
+.d-column span {
+    /* Estilos para todos os spans dentro do contêiner d-column */
+    font-weight: normal; /* Exemplo de estilo comum para todos os spans */
+}
+
+.d-column .thin-span {
+    /* Estilos específicos para o span mais fino */
+    font-weight: bold;
+    color: #050A30;
+    text-transform: uppercase;
+    /* Adicione outros estilos conforme necessário */
+}
 
 
 /* Estilize seus links <a> com a fonte personalizada */
@@ -95,7 +113,7 @@ a {
 }
 
 .bg-dark-fundo{
-    background-color: #567666;
+    background-color: #050A30;
 }
 
    /* Estilize os submenus para que eles fiquem ocultos por padrão */
@@ -210,9 +228,7 @@ a {
     margin-bottom: 20px; /* Espaçamento inferior do título */
 }
 
-#bannerCarousel {
-    overflow: hidden; /* Ocultar conteúdo que exceder a altura fixa */
-}
+
 
 /* Estilo para telas de tamanho médio (tablets, por exemplo) */
 @media (max-width: 768px) {
@@ -316,12 +332,6 @@ strong{
     height: 150px; /* Altura do p dentro do value-card */
 }
 
-/* Estilo para telas pequenas (celulares, por exemplo) */
-@media (max-width: 480px) {
-    #bannerCarousel {
-        height: 200px;/* Altura ainda menor para celulares */
-    }
-}
 
 
 /* Estilo para os valores */
@@ -330,15 +340,59 @@ strong{
     padding: 0; /* Remova o espaçamento interno da lista */
 }
 
+#bannerCarousel {
+   
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Cor do texto (pode precisar ser ajustada dependendo da imagem de fundo) */
+}
+
+.titule-banner-1, .titule-banner-2, .titule-banner-3, .titule-banner-4 {
+    color: #333; /* Cor do texto dentro da seção */
+}
+
+/* Restante do seu estilo permanece inalterado */
+.titule-banner-1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titule-banner-2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titule-banner-3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.titule-banner-4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.carousel{
+    padding: 20px;
+    height: 270px;
+    background-image: url('/imagem/img1.jpg'); /* Substitua pelo caminho real da sua imagem */
+}
+
 
 
 .carousel-inner {
-    height: 100%;
+    height: 80%;
 }
 
 .carousel-inner img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 90%;
     object-fit: cover;
 }
 /* Estilo para cada item da lista */
@@ -351,8 +405,8 @@ strong{
 /* Estilo para a imagem redonda */
 .rounded-image {
     border-radius: 50%; /* Forma redonda */
-    width: 200px; /* Largura da imagem */
-    height: 200px; /* Altura da imagem */
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
     margin: 0 auto 20px; /* Centralizar e adicionar margem inferior */
     display: block; /* Para centralizar horizontalmente */
 }
@@ -396,9 +450,7 @@ strong{
 }
 
 
-    body{
-        background-color: #9a9a1e;
-    }
+ 
 
     /* Estilo para a seção */
     .section-6 {
