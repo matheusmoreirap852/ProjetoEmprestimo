@@ -15,6 +15,11 @@ html {
 }
 
 
+.section-1{
+    padding-top: 80px;
+}
+
+
 /* Estilo para o botão "Voltar ao Topo" */
 #btnVoltarAoTopo {
     
@@ -235,8 +240,11 @@ a {
     #bannerCarousel {
         height: 250px; /* Altura menor para tablets */
     }
-}
 
+    .section-1{
+        padding-top: 200px;
+    }
+}
 /* Estilos para a seção de fundo branco */
 .atividades-section {
     background-color: #f5f5f5;
@@ -375,6 +383,7 @@ strong{
 .titule-banner-4 {
     font-size: 20px;
     font-weight: bold;
+   
 }
 
 
