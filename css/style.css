@@ -111,6 +111,95 @@ a {
     display: block;
 }
 
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-3 img {
+    width: auto;
+    height: auto;
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da seção */
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+
+/* ESTILO FORMATADOS  */
+.elementor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.elementor-column {
+    flex: 1;
+    margin: 15px;
+    max-width: calc(33.33% - 30px);
+    box-sizing: border-box;
+}
+
+.elementskit-info-image-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.elementskit-box-header img {
+    max-width: 100%;
+   
+}
+
+.elementskit-info-box-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.elementskit-box-style-content {
+    margin-top: 15px;
+}
+
+.elementor-button-wrapper {
+    margin-top: 15px;
+}
+
+ /* Estilo para as imagens nas caixas de imagem */
+ .elementskit-info-image-box img {
+    border-radius: 10px; /* Adicione a quantidade desejada de borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adicione uma sombra opcional */
+    max-width: 100%; /* Garante que as imagens não ultrapassem a largura da caixa */
+    height: auto; /* Garante que a altura da imagem seja ajustada automaticamente */
+  }
+
+  /* Estilo para as bordas das caixas de imagem */
+  .elementskit-info-image-box {
+    border: 1px solid #ccc; /* Adicione a cor e largura da borda desejadas */
+    border-radius: 10px; /* Adicione a quantidade desejada de borda arredondada */
+    overflow: hidden; /* Garante que a borda arredondada seja aplicada corretamente */
+  }
+
+  /* Estilo para o botão de contato */
+  .elementskit-box-body a {
+    background-color: #050A30;
+    margin-top: 20px;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+/* ESTILO FORMATADOS  */
+
+
+
+
+
 /* CSS personalizado para destacar o texto no carrossel */
 .destaque-texto {
     background-color: rgba(0, 0, 0, 0.7);
@@ -278,6 +367,9 @@ a {
 @media (max-width: 768px) {
     #bannerCarousel {
         height: 250px; /* Altura menor para tablets */
+    }
+    .elementor-column {
+        max-width: 100%;
     }
 
     .section-1{
